@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script type="text/javascript" src="calculator.js"></script> 
+            <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+            
+        <form class="calcForm" name="calculator">
+            <input type="text" class="calcDisplay" id="display" />
+            <div class="calcRow">
+                <input type="button" class="calcButton" value="7" onclick="return numInput('7');" />
+                <input type="button" class="calcButton" value="8" onclick="return numInput('8');" />
+                <input type="button" class="calcButton" value="9" onclick="return numInput('9');" />
+                <input type="button" class="calcButton" value="+" onclick="return setOperation('add');" />
+            </div>
+            <div class="calcRow">
+                <input type="button" class="calcButton" value="4" onclick="return numInput('4');" />
+                <input type="button" class="calcButton" value="5" onclick="return numInput('5');" />
+                <input type="button" class="calcButton" value="6" onclick="return numInput('6');" />
+                <input type="button" class="calcButton" value="-" onclick="return setOperation('subtract');" />
+            </div>
+            <div class="calcRow">
+                <input type="button" class="calcButton" value="1" onclick="return numInput('1');" />
+                <input type="button" class="calcButton" value="2" onclick="return numInput('2');" />
+                <input type="button" class="calcButton" value="3" onclick="return numInput('3');" />
+                <input type="button" class="calcButton" value="x" onclick="return setOperation('multiply');" />
+            </div>
+            <div class="calcRow">
+                <input type="button" class="calcButton" value="0" onclick="return numInput('0');" />
+                <input type="button" class="calcButton" value="." onclick="return insertDecimal('.');" />
+                <input type="button" class="calcButton" value="C" onclick="return clearDisplay()" />
+                <input type="button" class="calcButton" value="=" onclick="return calculate()" />
+            </div>
+        </form>
+    </body>
+</html>
